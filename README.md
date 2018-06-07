@@ -1,6 +1,6 @@
 Website :
 
-https://parsicoin.net
+https://catalyst.cash
 
 -= Building ParsiCoin =-
 
