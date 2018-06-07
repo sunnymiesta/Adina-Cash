@@ -150,6 +150,19 @@ const std::vector<uint64_t> Currency::POWERS_OF_TEN = {
 		}
 	}
 
+        size_t Currency::blockGrantedFullRewardZoneByBlockVersion(uint8_t blockMajorVersion) const {
+		if (blockMajorVersion >= BLOCK_MAJOR_VERSION_3) {
+			return m_blockGrantedFullRewardZone;
+		}
+		else if (blockMajorVersion == BLOCK_MAJOR_VERSION_2) {
+			return CryptoNote::parameters::CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V2;
+		}
+		else {
+			return CryptoNote::parameters::CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1;
+		}
+	}
+
+
 	bool Currency::getBlockReward(uint8_t blockMajorVersion, size_t medianSize, size_t currentBlockSize, uint64_t alreadyGeneratedCoins,
 		uint64_t fee, uint64_t& reward, int64_t& emissionChange, uint32_t height) const {
 		//assert(alreadyGeneratedCoins <= m_moneySupply);
@@ -419,8 +432,8 @@ const std::vector<uint64_t> Currency::POWERS_OF_TEN = {
 		return Common::fromString(strAmount, amount);
 	}
 
-	difficulty_type Currency::nextDifficulty(uint8_t version, uint32_t blockIndex, std::vector<uint64_t> timestamps,
-  std::vector<difficulty_type> cumulativeDifficulties) const {
+	difficulty_type Currency::nextDifficulty(uint8_t blockMajorVersion, std::vector<uint64_t> timestamps,
+		std::vector<difficulty_type> cumulativeDifficulties) const {
     // LWMA difficulty algorithm
     // Copyright (c) 2017-2018 Zawy
     // MIT license http://www.opensource.org/licenses/mit-license.php.

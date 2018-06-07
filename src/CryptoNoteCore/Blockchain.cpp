@@ -704,7 +704,7 @@ difficulty_type Blockchain::getDifficultyForNextBlock() {
   uint32_t block_index = m_blocks.size();
   uint8_t block_major_version = getBlockMajorVersionForHeight(block_index + 1);
 
-  return m_currency.nextDifficulty(block_major_version, block_index, timestamps, commulative_difficulties);
+  return m_currency.nextDifficulty(block_major_version, timestamps, commulative_difficulties);
 }
 
 uint64_t Blockchain::getBlockTimestamp(uint32_t height) {
