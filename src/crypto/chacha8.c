@@ -9,7 +9,7 @@ Public domain.
 #include <sys/param.h>
 
 #include "chacha8.h"
-#include "Common/int-util.h"
+#include "int-util.h"
 
 /*
  * The following macros are used to obtain exact-width results.
@@ -165,3 +165,4 @@ void chacha8(const void* data, size_t length, const uint8_t* key, const uint8_t*
     data = (uint8_t*)data + 64;
   }
 }
+

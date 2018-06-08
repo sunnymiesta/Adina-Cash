@@ -174,7 +174,7 @@ const std::vector<uint64_t> Currency::POWERS_OF_TEN = {
 		     }
 		// Tail emission
 		if (height <= 1500000) {
-                uint64_t bad_tail_emission_reward = uint64_t(70000000000);
+                uint64_t bad_tail_emission_reward = uint64_t(700000000);
                 if (alreadyGeneratedCoins + bad_tail_emission_reward >= m_moneySupply || baseReward < bad_tail_emission_reward)
                 {
                     baseReward = bad_tail_emission_reward;
