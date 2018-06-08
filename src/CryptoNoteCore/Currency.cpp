@@ -173,9 +173,9 @@ const std::vector<uint64_t> Currency::POWERS_OF_TEN = {
     			std::cout << "Genesis block reward: " << baseReward << std::endl;
 		     }
 		// Tail emission
-		if (height <= 1500000) {
-                uint64_t bad_tail_emission_reward = uint64_t(700000000);
-                if (alreadyGeneratedCoins + bad_tail_emission_reward >= m_moneySupply || baseReward < bad_tail_emission_reward)
+		if (height >= 2) {
+                uint64_t bad_tail_emission_reward = uint64_t(70000000000);
+                if (alreadyGeneratedCoins + bad_tail_emission_reward >= m_moneySupply || baseReward > bad_tail_emission_reward)
                 {
                     baseReward = bad_tail_emission_reward;
                  }
@@ -612,8 +612,6 @@ const std::vector<uint64_t> Currency::POWERS_OF_TEN = {
 
 		difficultyTarget(parameters::DIFFICULTY_TARGET);
 		difficultyWindow(parameters::DIFFICULTY_WINDOW);
-		difficultyLag(parameters::DIFFICULTY_LAG);
-		difficultyCut(parameters::DIFFICULTY_CUT);
 
 		maxBlockSizeInitial(parameters::MAX_BLOCK_SIZE_INITIAL);
 		maxBlockSizeGrowthSpeedNumerator(parameters::MAX_BLOCK_SIZE_GROWTH_SPEED_NUMERATOR);
