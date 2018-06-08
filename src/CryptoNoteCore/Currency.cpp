@@ -178,6 +178,14 @@ const std::vector<uint64_t> Currency::POWERS_OF_TEN = {
                 if (alreadyGeneratedCoins + bad_tail_emission_reward >= m_moneySupply || baseReward > bad_tail_emission_reward)
                 {
                     baseReward = bad_tail_emission_reward;
+                    std::cout << "Found block reward: " << baseReward << std::endl;
+                 }
+                 }
+                if (height >= 100000) {
+                if (alreadyGeneratedCoins + CryptoNote::parameters::TAIL_EMISSION_REWARD >= m_moneySupply || baseReward <                   CryptoNote::parameters::TAIL_EMISSION_REWARD)
+		{
+		     baseReward = CryptoNote::parameters::TAIL_EMISSION_REWARD;
+                     std::cout << "Found block reward: " << baseReward << std::endl;
                  }
                  }
 		size_t blockGrantedFullRewardZone = blockGrantedFullRewardZoneByBlockVersion(blockMajorVersion);
