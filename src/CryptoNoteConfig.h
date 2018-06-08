@@ -16,7 +16,7 @@ const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 500;
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 11;
 
 // MONEY_SUPPLY - total number coins to be generated
-const uint64_t MONEY_SUPPLY                                  = UINT64_C(210000000000000000);
+const uint64_t MONEY_SUPPLY                                  = UINT64_C(2100000000000000000);
 const uint64_t TAIL_EMISSION_REWARD                          = UINT64_C(10000000000); //what this?
 const size_t CRYPTONOTE_COIN_VERSION                         = 1;
 const uint64_t PRE_BLOCK_REWARD	                             = UINT64_C(840000000000000000);
