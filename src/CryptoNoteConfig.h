@@ -72,7 +72,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 } // parameters
 
 const char     CRYPTONOTE_NAME[]                             = "catalyst";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010601ff0001c5f5b7d9a43a029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121013a52343ef927357d07a7bfb1c120a840d42b93182f326003700077b85b825bae";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "010601ff0001c5f5b7d9a43a029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210189b75a22d556b2ae8b68032fdec1d2375b0969a144155a9ab810a3c8045bdb96";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
