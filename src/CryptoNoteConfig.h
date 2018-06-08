@@ -19,7 +19,7 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 11;
 const uint64_t MONEY_SUPPLY                                  = UINT64_C(2100000000000000000);
 const uint64_t TAIL_EMISSION_REWARD                          = UINT64_C(10000000000); //what this?
 const size_t CRYPTONOTE_COIN_VERSION                         = 1;
-const uint64_t PRE_BLOCK_REWARD	                             = UINT64_C(840000000000000000);
+const uint64_t PRE_BLOCK_REWARD	                             = UINT64_C(84000000000000000);
 const unsigned EMISSION_SPEED_FACTOR                         = 20;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
