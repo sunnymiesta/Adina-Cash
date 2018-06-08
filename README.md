@@ -2,7 +2,7 @@ Website :
 
 https://catalyst.cash
 
--= Building ParsiCoin =-
+-= Building CatalystCoin =-
 
 On *nix:
 
