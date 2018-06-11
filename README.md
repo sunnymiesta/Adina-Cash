@@ -44,7 +44,7 @@ To build, change to a directory where this file is located, and run this command
 
 mkdir build && cd build && cmake .. -G "Visual Studio 14 Win64" ..
 
-then open ParsiCoin.sln File on Visual Studio
+then open catalyst.sln File on Visual Studio
 
 In VS' Solution Explorer select upnpc-static' Properies -> C/C++ -> Code Generation -> Runtime Library - > change it to Multi-threaded (/MT)
 
