@@ -5,6 +5,8 @@ We’ve built a custom platform to Future of Cryptocurrency. CryptonoteEvo is a 
 Catalyst Coin is the most secure, stable, and decentralized platform amongst the thousands of digital currencies in the market today.
 Catalyst is an innovative, cryptographically-secured digital asset ledger based on blockchain technology. Developed in part from the core code behind Karbo.
 
+<h2>We are trying to do things no cryptocurrency has ever done before. The Completly Masternode Solution in cryptonote world.</h2>
+
 For more details visit our Website :
 
 https://catalyst.cash
